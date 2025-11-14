@@ -1,11 +1,15 @@
 import Image from "next/image";
-
+import styles from "@/app/ui/home.module.css";
 export default function Page() {
   return (
-    <main>
-      <div>
-        <Image src="/hero-desktop.png" alt="Disco balls" />
+    <>
+      <div className="home-page">
+        <div className="home-page-content">
+          <h1>Welcome to My Event App 🎉</h1>
+          <p>Use this app to RSVP to upcoming events and stay connected.</p>
+          <a href="/rsvp">Create an event</a>
+        </div>
       </div>
-    </main>
+    </>
   );
 }
